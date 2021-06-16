@@ -46,7 +46,7 @@ nn=1; while(nn<=nTot){
   close(newdata)
   geneFmat=readDat;
 
-PBfile=paste("/data/liwenjin/backup-uic/fitted_data_0.35/fitModelRes_",simIndex,".dat",sep="");
+PBfile=paste("fitModelRes_",simIndex,".dat",sep="");
 datPB=as.matrix(read.table(PBfile));
 nins=80; datPB[,1]=(datPB[,1]-2)*nins+1;
 # linear interpolation
